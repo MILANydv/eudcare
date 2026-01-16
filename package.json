@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "seed": "ts-node prisma/seeders/index.ts",
+    "seed:dev": "ts-node prisma/seeders/examples.ts dev-environment",
+    "seed:test": "ts-node prisma/seeders/examples.ts test-seeders"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
